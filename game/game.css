@@ -1,0 +1,87 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+#color-container {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnVoltar {
+    width: 150px;
+    height: 30px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 15px;
+}
+
+#color-box {
+    width: 80%;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#color-options {
+    margin-top: 20px;
+}
+
+.color-option {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-image: linear-gradient(to bottom, #ff3399 0%, #9933ff 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transition: background-image 0.3s, box-shadow 0.3s;
+}
+
+#reset-button:hover {
+    background-image: linear-gradient(to bottom, #9933ff 0%, #ff3399 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
