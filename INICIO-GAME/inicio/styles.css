@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.jpg'); /* Gradiente de sobreposição e imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: backgroundAnimation 20s linear infinite; /* Animação de fundo */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), transparent); /* Gradiente de fundo transparente */
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    max-width: 200px;
+    animation: fadeIn 2s ease-in-out; /* Animação de fade-in para o logo */
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    background: linear-gradient(45deg, #b700ff, #680068); /* Gradiente azul */
+    color: #fff;
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Ícones */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.1/css/all.min.css");
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de fundo */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
